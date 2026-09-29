@@ -1,0 +1,77 @@
+VERIFICACAO - GROVER EM Q#
+Data: 28/09/2026
+Microsoft QDK 1.32.3; simulador local ideal, perfil Unrestricted.
+Semente do registro: 20260928. O executar.py nao fixa semente.
+
+Codigo compilado e executado com sucesso.
+Validacao deterministica do circuito: probabilidades confrontadas com
+sin^2((2r+1) * arcsin(1/4)), tolerancia 1e-10.
+Foram conferidas 0, 3 e 6 iteracoes; tabela reordenada; valor zero;
+e valor ausente, que manteve distribuicao uniforme.
+Verificados tambem busca linear presente/ausente e rejeicao das entradas
+invalidas de tamanho, duplicacao, faixa, repeticoes e iteracoes.
+A ordem dos bits da representacao do estado foi conferida separadamente.
+
+RESULTADOS DAS VERIFICACOES DO CIRCUITO:
+[
+  {
+    "valor": 55,
+    "iteracoes": 0,
+    "probabilidade_esperada": 0.0625,
+    "resultado": "aprovado"
+  },
+  {
+    "valor": 55,
+    "iteracoes": 3,
+    "probabilidade_esperada": 0.9613189697265625,
+    "resultado": "aprovado"
+  },
+  {
+    "valor": 55,
+    "iteracoes": 6,
+    "probabilidade_esperada": 0.020380768924951515,
+    "resultado": "aprovado"
+  },
+  {
+    "valor": 40,
+    "iteracoes": 3,
+    "probabilidade_esperada": 0.9613189697265625,
+    "resultado": "aprovado"
+  },
+  {
+    "valor": 0,
+    "iteracoes": 3,
+    "probabilidade_esperada": 0.9613189697265625,
+    "resultado": "aprovado"
+  },
+  {
+    "valor": 127,
+    "iteracoes": 3,
+    "probabilidade_esperada": 0.0625,
+    "resultado": "aprovado"
+  }
+]
+
+SAIDA REAL DE Main():
+BUSCA CLASSICA E QUANTICA - SIMULACAO IDEAL
+Dados: [40, 10, 70, 5, 25, 60, 90, 15, 30, 50, 65, 80, 95, 20, 55, 85]
+Valor procurado: 55
+Busca linear: indice 14; 15 comparacoes.
+O indice da busca linear nao e fornecido ao algoritmo quantico.
+--- 0 iteracoes por tentativa ---
+Acertos: 11/200 (5.5%)
+Contagens por indice (0 a 15): [18, 7, 16, 7, 9, 13, 13, 12, 15, 18, 8, 14, 20, 9, 11, 10]
+Chamadas ao oraculo neste lote: 0
+--- 3 iteracoes por tentativa ---
+Acertos: 195/200 (97.5%)
+Contagens por indice (0 a 15): [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 195, 2]
+Chamadas ao oraculo neste lote: 600
+--- 6 iteracoes por tentativa ---
+Acertos: 4/200 (2.0%)
+Contagens por indice (0 a 15): [12, 9, 19, 16, 13, 15, 17, 12, 8, 9, 7, 19, 10, 15, 4, 15]
+Chamadas ao oraculo neste lote: 1200
+3 iteracoes amplificam a resposta; 6 ultrapassam o primeiro maximo.
+Contar consultas nao mede tempo real nem quantidade total de portas.
+
+Este registro nao representa execucao em processador quantico fisico.
+Nao e uma medicao de aceleracao de tempo nem substitui suas capturas de tela.
